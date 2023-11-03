@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urban Issue Reporting</title>
+</head>
+<body>
+    <h1>Report an Urban Issue</h1>
+    <p>Please use this form to report an issue in your community.</p>
+
+    <form action="submit_issue.php" method="post" enctype="multipart/form-data">
+        <label for="issue_type">Issue Type:</label>
+        <select name="issue_type" id="issue_type">
+            <option value="pothole">Pothole</option>
+            <option value="streetlight">Broken Streetlight</option>
+            <option value="safety_concern">Safety Concern</option>
+            <option>Urban Sprawl</option>
+            <option>Overcrowding</option>
+            <option>Slums and Squatter Settlements</option>
+            <option>Water Issues</option>
+            <option>Sewerage Problems</option>
+            <option>Trash Disposal</option>
+            <option>Influx of Refugees and Migrants</option>
+        
+            
+            <!-- Add more issue types as needed -->
+        </select>
+
+        <br>
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" rows="4" cols="50" required></textarea>
+
+        <br>
+
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" required>
+
+        <br>
+
+        <label for="photo">Upload a Photo:</label>
+        <input type="file" name="photo" id="photo">
+
+        <br>
+
+        <input type="submit" value="Submit Issue">
+    </form>
+</body>
+</html>
